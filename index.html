@@ -5,6 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contextle — Guess the hidden word from context</title>
   <meta name="description" content="A fresh daily word game: read a few sentences with a blank, then guess the hidden word from context. 6 tries." />
+
+  <!-- Social sharing (Open Graph + Twitter) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contextle — Guess the hidden word from context" />
+  <meta property="og:description" content="Read a few sentences with a blank, then guess the hidden word from context. 6 tries." />
+  <meta property="og:url" content="https://jeanmhuang.github.io/contextle/" />
+
+  <!-- Preferred image hosted on GitHub Pages (add thumbnail.png to your Pages root if possible) -->
+  <meta property="og:image" content="https://jeanmhuang.github.io/contextle/thumbnail.png" />
+  <meta property="og:image:secure_url" content="https://jeanmhuang.github.io/contextle/thumbnail.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Contextle thumbnail" />
+
+  <!-- Fallback image pointing at GitHub raw (in case Pages copy isn’t present yet) -->
+  <meta property="og:image" content="https://raw.githubusercontent.com/jeanmhuang/contextle/main/thumbnail.png" />
+
+  <!-- Twitter card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contextle — Guess the hidden word from context" />
+  <meta name="twitter:description" content="Read a few sentences with a blank, then guess the hidden word from context. 6 tries." />
+  <meta name="twitter:image" content="https://jeanmhuang.github.io/contextle/thumbnail.png" />
+
+  <!-- Favicons (reusing thumbnail.png so you get a favicon on desktop & mobile) -->
+  <link rel="icon" type="image/png" sizes="32x32" href="https://jeanmhuang.github.io/contextle/thumbnail.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://jeanmhuang.github.io/contextle/thumbnail.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://jeanmhuang.github.io/contextle/thumbnail.png">
+  <meta name="msapplication-TileImage" content="https://jeanmhuang.github.io/contextle/thumbnail.png">
+  <!-- Legacy hint some scrapers still check -->
+  <link rel="image_src" href="https://jeanmhuang.github.io/contextle/thumbnail.png" />
+
   <style>
     :root {
       --bg: #0b0c10;
@@ -80,6 +112,9 @@
   </style>
 </head>
 <body>
+  <!-- Hidden inline image as extra hint for stubborn crawlers -->
+  <img src="https://jeanmhuang.github.io/contextle/thumbnail.png" alt="Contextle thumbnail" width="1200" height="630" style="position:absolute;left:-9999px;top:-9999px;z-index:-1;" aria-hidden="true" />
+
   <div class="app">
     <header>
       <div class="brand">
@@ -411,3 +446,4 @@
   </script>
 </body>
 </html>
+
